@@ -1,0 +1,5 @@
+<launch>
+    <node pkg='turtlesim' type='turtlesim_node' name='turtlesim_gui' />
+    <node pkg='turtlesim' type='turtle_teleop_key' name='turtlesim_key' />
+    <node pkg='hello_vscode' type='hello_vscode_p.py' name='hello' output='screen' /> 
+</launch>

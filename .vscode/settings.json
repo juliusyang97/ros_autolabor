@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/julius/catkin_ws_1/devel/lib/python2.7/dist-packages",
+        "/opt/ros/kinetic/lib/python2.7/dist-packages",
+        "/home/julius/catkin_ws_2/devel/lib/python2.7/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/julius/catkin_ws_1/devel/lib/python2.7/dist-packages",
+        "/opt/ros/kinetic/lib/python2.7/dist-packages"
+        
+    ]
+}
