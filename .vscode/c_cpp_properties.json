@@ -10,7 +10,8 @@
         "/home/julius/catkin_ws_1/src/tianracer/tianracer_core/include/**",
         "/usr/include/**"
       ],
-      "name": "ROS"
+      "name": "ROS",
+      "cppStandard": "c++17"
     }
   ],
   "version": 4
