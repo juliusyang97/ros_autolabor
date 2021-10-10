@@ -1,5 +1,9 @@
 <launch>
+    <!-- 添加被执行的节点 -->
+    <!-- 乌龟GUI -->
     <node pkg='turtlesim' type='turtlesim_node' name='turtlesim_gui' />
-    <node pkg='turtlesim' type='turtle_teleop_key' name='turtlesim_key' />
+    <!-- 键盘控制节点 -->
+    <node pkg='turtlesim' type='turtle_teleop_key' name='turtlesim_key' output="screen" />
+    <!-- hello_vscode_c -->
     <node pkg='hello_vscode' type='hello_vscode_c' name='hello' output='screen' /> 
 </launch>

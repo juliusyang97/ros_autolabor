@@ -11,6 +11,9 @@
         "/usr/include/**"
       ],
       "name": "ROS",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "c11",
+      "intelliSenseMode": "gcc-x64",
       "cppStandard": "c++17"
     }
   ],
