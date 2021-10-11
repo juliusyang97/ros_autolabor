@@ -136,6 +136,8 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/plumbing_pub_sub_node.cpp)
 add_executable(demo01_pub_c src/demo01_pub_c.cpp)
 add_executable(demo02_sub_c src/demo02_sub_c.cpp)
+add_executable(demo03_pub_person_c src/demo03_pub_person_c.cpp)
+add_executable(demo04_sub_person_c src/demo04_sub_person_c.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -146,12 +148,20 @@ add_executable(demo02_sub_c src/demo02_sub_c.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo03_pub_person_c ${PROJECT_NAME}_generate_messages_cpp)
+add_dependencies(demo04_sub_person_c ${PROJECT_NAME}_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(demo01_pub_c
   ${catkin_LIBRARIES}
 )
 target_link_libraries(demo02_sub_c
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(demo03_pub_person_c
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(demo04_sub_person_c
   ${catkin_LIBRARIES}
 )
 

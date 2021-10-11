@@ -8,7 +8,8 @@
       "includePath": [
         "/opt/ros/kinetic/include/**",
         "/home/julius/catkin_ws_1/src/tianracer/tianracer_core/include/**",
-        "/usr/include/**"
+        "/usr/include/**",
+        "/home/julius/catkin_ws_2/devel/include/**"
       ],
       "name": "ROS",
       "compilerPath": "/usr/bin/gcc",
